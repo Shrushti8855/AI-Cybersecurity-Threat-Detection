@@ -1,0 +1,54 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Editors
+.vscode/
+.idea/
+
+# Raw datasets (do not upload large datasets)
+data/raw/*
+!data/raw/.gitkeep
+
+# Trained models (can be regenerated)
+models/*
+!models/.gitkeep
+
+# Generated reports, predictions, and alerts
+outputs/*
+!outputs/figures/
+!outputs/figures/.gitkeep
+!outputs/reports/
+!outputs/reports/.gitkeep
+!outputs/alerts/
+!outputs/alerts/.gitkeep
+
+# Images: keep placeholders, not generated screenshots
+images/*
+!images/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Ignore generated files inside output subfolders
+outputs/alerts/*
+outputs/reports/*
+outputs/figures/*
